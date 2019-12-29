@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.PackageInstalledActivity">
+
+    <LinearLayout
+        android:id="@+id/settings_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_settings_card_view"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/system_packages_check_box"
+            android:layout_width="@dimen/width_system_packages_check_box"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/padding_system_packages_check_box"
+            android:textSize="@dimen/text_size_system_packages_check_box"
+            android:layout_weight="0.3"
+            android:text="@string/text_system_packages_check_box"/>
+
+        <Spinner
+            android:id="@+id/sort_options_spinner"
+            android:layout_width="@dimen/width_sort_options_spinner"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"/>
+
+        <ImageView
+            android:id="@+id/load_data_image_view"
+            android:layout_width="@dimen/width_load_data_image_view"
+            android:layout_height="@dimen/height_load_data_image_view"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_weight="0.1"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_data_app_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/settings_card_view"/>
+
+    <RelativeLayout
+        android:id="@+id/progress_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/percent_loaded_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+        <TextView
+            android:id="@+id/comment_progress_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percent_loaded_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_small"
+            android:text="@string/loading_process"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

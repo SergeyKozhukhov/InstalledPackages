@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+
+    <dimen name="elevation_medium">8dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="height_load_data_image_view">40dp</dimen>
+    <dimen name="width_load_data_image_view">0dp</dimen>
+    <dimen name="width_sort_options_spinner">0dp</dimen>
+    <dimen name="width_system_packages_check_box">0dp</dimen>
+    <dimen name="padding_system_packages_check_box">5dp</dimen>
+    <dimen name="text_size_system_packages_check_box">15sp</dimen>
+    <dimen name="margin_settings_card_view">5dp</dimen>
+
+</resources>

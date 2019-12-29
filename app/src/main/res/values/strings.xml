@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InstalledPackages</string>
+
+    <string name="loading_process">Please, wait…</string>
+    <string name="text_system_packages_check_box">System</string>
+    <string name="percent_progress_text_message_1">"Please. Wait… Loaded: "</string>
+    <string name="percent_progress_text_message_2">%</string>
+    <string name="sort_option_none_description">Sort</string>
+    <string name="sort_option_by_app_name_description">A-Z AppName</string>
+    <string name="sort_option_by_app_package_name_description">A-Z PackageName</string>
+</resources>
